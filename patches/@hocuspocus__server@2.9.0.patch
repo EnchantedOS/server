@@ -1,0 +1,24 @@
+diff --git a/package.json b/package.json
+index 7cd9e6abd211935af46cd8cb426891d69df3381e..51e0a247610d6d8dd47912c6b8886cd358c6ed79 100644
+--- a/package.json
++++ b/package.json
+@@ -18,6 +18,7 @@
+     "source": {
+       "import": "./src"
+     },
++    "/Server": "./src/Server",
+     "default": {
+       "import": "./dist/hocuspocus-server.esm.js",
+       "require": "./dist/hocuspocus-server.cjs",
+@@ -45,5 +46,10 @@
+     "y-protocols": "^1.0.6",
+     "yjs": "^13.6.8"
+   },
+-  "gitHead": "b3454a4ca289a84ddfb7fa5607a2d4b8d5c37e9d"
++  "gitHead": "b3454a4ca289a84ddfb7fa5607a2d4b8d5c37e9d",
++  "pnpm": {
++    "patchedDependencies": {
++      "@hocuspocus/server@2.9.0": "patches/@hocuspocus__server@2.9.0.patch"
++    }
++  }
+ }
